@@ -1,0 +1,21 @@
+.current-conditions {
+  background-color: #3c414e;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.current-conditions h3 {
+    margin-top: 0;
+    text-align: center;
+}
+.condition-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  padding: 8px 0;
+  border-bottom: 1px solid #4a505e;
+}
+.condition-item:last-child {
+    border-bottom: none;
+}
