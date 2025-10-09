@@ -12,7 +12,7 @@ app.get('/api/marinedata', async (req, res) => {
     const apiKey = process.env.API_KEY;
     const lat = 12.91;
     const lon = 74.85;
-    const weatherApiUrl = `http://api.weatherapi.com/v1/marine.json?key=${apiKey}&q=${lat},${lon}&days=2`;
+    const weatherApiUrl = `https://api.weatherapi.com/v1/marine.json?key=${apiKey}&q=${lat},${lon}&days=2`;
 
     const response = await axios.get(weatherApiUrl);
     res.json(response.data);
